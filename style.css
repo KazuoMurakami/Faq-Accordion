@@ -129,17 +129,31 @@ h2:visited {
 }
 
 .woman-background {
-    position: absolute;
     width: 300px;
     left: 100px;
     top: -150px;
 }
 
 .box-background {
-    position: absolute;
     left: 60px;
     top: -120px;
 
 }
 
+}
+
+@media (max-width:500px) {
+    .content {
+        width: 300px;
+    }
+
+    .woman-background {
+        width: 200px;
+        left: 50px;
+        top: -100px;
+    }
+    .box-background {
+        left: -20px;
+        top: -90px;
+    }
 }
