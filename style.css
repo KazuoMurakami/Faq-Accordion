@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    list-style: none;
+}
+
+
+body {
+    height: 100vh;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+main {
+    position: relative;
+}
+
+.content {
+    width: 920px;
+    height: 520px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.img-content {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.content-info{
+    font-size: 12px;
+    color: hsl(240deg 3% 72%);
+    width: 50%;
+    margin: 2rem 6rem 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-info ul{
+    flex: 1;
+}
+
+.content-info h1 {
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.content-info li h2{
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.content-info span {
+    margin-right: 1rem;
+}
+
+.content-info p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.background {
+    position: absolute;
+    right: 40px;
+    bottom: -159px;
+}
+
+.woman-background {
+    position: absolute;
+    top: 73px;
+    right: 30px;
+}
+
+.box-background {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 218px;
+    left: -90px;
+    z-index: 1;
+}
+
+h2:visited {
+    color: black;
+    /* altera a cor do texto do título para preto quando clicado */
+}
+
+@media (max-width:950px){
+    .content {
+            width: 700px;
+    }
+
+}
+
+@media (max-width:760px){
+    .content {
+            width: 500px;
+        }
+
+    .content-info {
+        width: 100%;
+        margin: 2rem;
+    }
+
+    .img-content {
+        width: 0%;
+    }
+
+    .background {
+        display: none;
+    }
+.img-content {
+    overflow:visible;
+}
+
+.woman-background {
+    position: absolute;
+    width: 300px;
+    left: 100px;
+    top: -150px;
+}
+
+.box-background {
+    position: absolute;
+    left: 60px;
+    top: -120px;
+
+}
+
+}
